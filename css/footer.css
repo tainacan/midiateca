@@ -1,0 +1,172 @@
+
+/* Bellow the logo, a smaller text size */
+footer .ct-socials-widget+.widget_text,
+footer .widget_text+.widget_text {
+    font-size: 14px;
+    max-width: 80%;
+}
+footer .wp-block-group__inner-container p.has-text-color {
+    margin-bottom: 6px;
+}
+footer .widget_text:last-of-type {
+    color: var(--paletteColor8, #f5f4ed);
+}
+
+/* A bit of space to the search bar top */
+footer .widget_search {
+    margin-top: 22px;
+    margin-bottom: 32px;
+}
+footer .widget_search button.search-submit svg {
+    --icon-size: 20px;
+}
+
+/* Tainacan Search bar has a special style on footer */
+footer .ct-container .wp-block-tainacan-search-bar  #tainacan-search-bar-block,
+footer .ct-container .wp-block-tainacan-search-bar  #tainacan-search-bar-block:hover,
+footer .ct-container .wp-block-tainacan-search-bar  #tainacan-search-bar-block:focus,
+footer .ct-container .wp-block-tainacan-search-bar  #tainacan-search-bar-block:active {
+    border-top: none !important;
+    border-left: none !important;
+    border-bottom: 3px solid var(--linkInitialColor) !important;
+    border-right: none !important;
+    height: 2.5em;
+    --tainacan-block-primary: var(--linkInitialColor);
+}
+footer .ct-container .wp-block-tainacan-search-bar  #tainacan-search-bar-block input#tainacan-search-bar-block_input {
+    background: transparent;
+    color: var(--linkInitialColor);
+    border: none;
+    padding: 6px 0em;
+    font-size: 1em;
+}
+footer .ct-container .wp-block-tainacan-search-bar  #tainacan-search-bar-block input#tainacan-search-bar-block_input:focus-visible {
+    outline: none;
+}
+footer .ct-container .wp-block-tainacan-search-bar  #tainacan-search-bar-block button {
+    background: transparent;
+    color: var(--linkInitialColor);
+    border: none;
+}
+
+/* Bellow search bar, we should have two columns for the menu */
+footer .wp-block-tainacan-search-bar+.widget_nav_menu .widget-menu {
+    -moz-column-count: 2;
+    -moz-column-gap: 1.5em;
+    -moz-column-rule: none;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 1.5em;
+    -webkit-column-rule: none;
+    column-gap: 1.5em;
+    column-rule: none;
+    column-count: 2;
+    font-size: 22px;
+}
+
+/* NewsLetter Subscribe area */
+.ct-newsletter-subscribe-widget {
+    background-color: var(--palette-color-10, #accfd8);
+    border-radius: 8px;
+    padding: 48px 100px;
+}
+
+.ct-newsletter-subscribe-widget .widget-title {
+    font-family: 'Barlow Condensed', Sans-Serif !important;
+    font-weight: bold;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: var(--paletteColor1, #642d39);
+    margin-bottom: 0;
+}
+.ct-newsletter-subscribe-widget .ct-widget-inner {
+    width: 100%;
+}
+.ct-newsletter-subscribe-widget .ct-widget-inner form {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.ct-newsletter-subscribe-widget .ct-newsletter-subscribe-description {
+    font-weight: 300;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-right: auto;
+    margin-bottom: 0px !important;
+    max-width: 396px;
+}
+
+.ct-newsletter-subscribe-widget input {
+    margin-top: 0;
+    margin-left: auto;
+    max-width: 420px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 0 0 0 2.25em;
+    min-height: 48px;
+    margin-right: -3px;
+    position: relative;
+    top: -18px;
+}
+.ct-newsletter-subscribe-widget input:hover,
+.ct-newsletter-subscribe-widget input:focus {
+    border: 1px solid var(--paletteColor1, #642d39);
+}
+
+.ct-newsletter-subscribe-widget button {
+    width: auto !important;
+    min-height: 48px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: var(--buttonTextInitialColor);
+    border: var(--button-border);
+    background-color: var(--buttonInitialColor);
+    position: relative;
+    top: -18px;
+}
+.ct-newsletter-subscribe-widget button:hover {
+    border-color: var(--button-border-hover-color);
+    color: var(--buttonTextHoverColor);
+    background-color: var(--buttonHoverColor);
+}
+
+@media screen and (max-width: 960px) {
+    footer div[data-column="widget-area-1"],
+    footer .ct-socials-widget+.widget_text,
+    footer .widget_text+.widget_text {
+        max-width: 100%;
+    }
+    
+    footer .widget_search+.widget_nav_menu .widget-menu {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+
+    .ct-newsletter-subscribe-widget {
+        padding: 36px 64px;
+    }
+}
+@media screen and (max-width: 1216px) {
+    .ct-newsletter-subscribe-widget .ct-widget-inner form {
+        flex-wrap: wrap;
+    }
+    .ct-newsletter-subscribe-widget input {
+        top: 0px;
+        margin-top: 4px;
+        margin-left: 0;
+        width: 100%;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+    .ct-newsletter-subscribe-widget button {
+        top: 0px;
+        margin-top: 4px;
+        width: 100% !important;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+}

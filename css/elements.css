@@ -1,0 +1,240 @@
+/* Hides swiper lazy loading */
+.swiper-lazy-preloader {
+    animation: none;
+    transform: none;
+    display: none;
+    visibility: hidden;
+}
+.swiper-button-disabled {
+    display: none;
+}
+
+/* GetWid Slick Carousel arrows */
+.slick-next::before,
+.slick-prev::before {
+    font-family: 'dashicons';
+    font-size: 30px;
+    color: var(--tainacan-block-primary, #298596);
+}
+.slick-next::before {
+    content: '\f344';
+}
+.slick-prev::before {
+    content: '\f340'
+}
+.slick-arrow {
+    width: 42px;
+    height: 42px;
+}
+.slick-next.slick-disabled,
+.slick-prev.slick-disabled {
+    display: none;
+    visibility: hidden;
+}
+
+/* Puts the breadcrumb on top of the page */
+.hero-section {
+    position: relative;
+    padding-right: 64px;
+}
+.hero-section .ct-breadcrumbs {
+    position: absolute;
+    top: 6px;
+    z-index: 2;
+}
+[data-vertical-spacing*="top"] .hero-section .ct-breadcrumbs {
+    top: calc(-1 * var(--content-vertical-spacing) - 1rem);
+}
+[data-vertical-spacing*="top"] .hero-section .ct-breadcrumbs:only-child {
+    top: calc(-1 * var(--content-vertical-spacing));
+}
+
+/* Custom Header elements */
+.midiateca-header-elements {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    max-width: var(--block-max-width, var(--container-max-width));
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+}
+
+.midiateca-header-elements .midiateca-header-button {
+    border: 1px solid var(--palette-color-10, #accfd8);
+    background-color: transparent;
+    border-radius: 100%;
+    padding: 0.5rem 1.2rem 0.5rem 0.8rem;
+    height: 56px;
+    width: 56px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    position: absolute;
+    cursor: pointer;
+}
+.midiateca-header-elements .midiateca-header-button:first-child {
+    top: 6px;
+}
+.midiateca-header-elements .midiateca-header-button:last-child {
+    top: calc( var(--content-vertical-spacing) + 8px);
+}
+[data-vertical-spacing*="top"] .midiateca-header-elements .midiateca-header-button:first-child {
+    top: calc((-1 * var(--content-vertical-spacing)) + 6px);
+}
+[data-vertical-spacing*="top"] .midiateca-header-elements .midiateca-header-button:last-child {
+    top: 8px;
+}
+.midiateca-header-elements .midiateca-header-button::hover,
+.midiateca-header-elements .midiateca-header-button::focus {
+    border: 1px solid var(--palette-color-10, #accfd8);
+}
+.midiateca-header-elements .midiateca-header-button .icon {
+    position: relative;
+}
+.midiateca-header-elements .midiateca-header-button .icon i::before {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    color: var(--paletteColor1, #642d39);
+}
+.midiateca-header-elements .midiateca-header-button .icon i::after {
+    background-color: var(--paletteColor1, #642d39);
+}
+.midiateca-header-elements .midiateca-header-button:hover .icon i::before {
+    color: var(--paletteColor2, #30020C);
+}
+.midiateca-header-elements .midiateca-header-button:hover .icon i::after {
+    background-color: var(--paletteColor2, #30020C);
+}
+.midiateca-header-elements .midiateca-header-button:focus .icon i::before {
+    color: var(--palette-color14, #e5acb9);
+}
+.midiateca-header-elements .midiateca-header-button:focus .icon i::after {
+    background-color: var(--palette-color14, #e5acb9);
+}
+.midiateca-header-elements .midiateca-header-button .icon i.dashicons {
+    line-height: 1.875rem;
+    width: 1.75rem;
+}
+
+/* Header buttons inside dark backrounds */
+body.single-post .midiateca-header-elements .midiateca-header-button .icon i::before,
+header.tainacan-collection-header:not(.tainacan-collection-header--term-page) .midiateca-header-elements .midiateca-header-button .icon i::before {
+    color: var(--paletteColor7, #ffffff);
+}
+body.single-post .midiateca-header-elements .midiateca-header-button .icon i::after,
+header.tainacan-collection-header:not(.tainacan-collection-header--term-page)  .midiateca-header-elements .midiateca-header-button .icon i::after {
+    background-color: var(--paletteColor7, #ffffff);
+}
+body.single-post .midiateca-header-elements .midiateca-header-button:hover .icon i::before,
+header.tainacan-collection-header:not(.tainacan-collection-header--term-page) .midiateca-header-elements .midiateca-header-button:hover .icon i::before {
+    color: var(--palette-color-10, #accfd8);
+}
+body.single-post .midiateca-header-elements .midiateca-header-button:hover .icon i::after,
+header.tainacan-collection-header:not(.tainacan-collection-header--term-page)  .midiateca-header-elements .midiateca-header-button:hover .icon i::after {
+    background-color: var(--palette-color-10, #accfd8);
+}
+body.single-post .midiateca-header-elements .midiateca-header-button:focus .icon i::before,
+header.tainacan-collection-header:not(.tainacan-collection-header--term-page) .midiateca-header-elements .midiateca-header-button:focus .icon i::before {
+    color: var(--palette-color14, #e5acb9);
+}
+body.single-post .midiateca-header-elements .midiateca-header-button:focus .icon i::after,
+header.tainacan-collection-header:not(.tainacan-collection-header--term-page) .midiateca-header-elements .midiateca-header-button:focus .icon i::after {
+    background-color: var(--palette-color14, #e5acb9);
+}
+
+/* Midiateca Social Icons share list */
+.midiateca-social-icons {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    width: 56px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0.0;
+    top: 90%;
+    transition: top 0.3s ease, opacity 0.3s ease;
+}
+.midiateca-social-icons.is-list-open {
+    display: flex;
+    visibility: visible;
+    opacity: 1.0;
+    top: calc(100% + 8px);
+}
+.midiateca-social-icons [data-icons-type] > * {
+    padding: 12px;
+    border: 1px solid var(--palette-color-10, #accfd8);
+    background-color: white;
+    display: block;
+    border-radius: 100%;
+    margin-bottom: 0px;
+    --icon-color: var(--paletteColor1, #642d39);
+    transition: margin 0.3s ease;
+}
+.midiateca-social-icons.is-list-open [data-icons-type] > * {
+    margin-bottom: 8px;
+}
+
+/* Single post header for curadorias */
+body.single-post .hero-section .page-description {
+    max-width: 624px;
+}
+
+/* Tweaks for better responsivenes */
+@media screen and (max-width: 767px) {
+    [data-header*="type-1"] .ct-header [data-id="logo"] .site-title {
+        --font-size: 34px;
+    }
+
+    .fs-mobile-50 .wp-block-getwid-advanced-heading__content,
+    .fs-mobile-50 .wp-block-getwid-countdown__content {
+        line-height: 90px !important;
+    }
+
+    .wp-block-getwid-post-carousel.has-slides-gap-large .slick-list,
+    .wp-block-getwid-images-slider.has-slides-gap-large .slick-list {
+        margin: 0 20px;
+    }
+
+    .wp-block-cover.is-style-midiateca-rounded {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .wp-block-columns.midiateca-museu-cards>.wp-block-column>.wp-block-cover>.wp-block-cover__inner-container>.wp-block-columns {
+        flex-wrap: nowrap;
+    }
+    .wp-block-columns.midiateca-museu-cards>.wp-block-column>.wp-block-cover>.wp-block-cover__inner-container>.wp-block-columns>.wp-block-column:first-child {
+        flex-basis: 42px !important;
+    }
+    .wp-block-columns.midiateca-museu-cards>.wp-block-column>.wp-block-cover>.wp-block-cover__inner-container>.wp-block-columns>.wp-block-column:last-child {
+        flex-basis: 100% !important;
+    }
+    .midiateca-header-elements {
+        --content-vertical-spacing: 60px;
+    }
+    .wp-block-search.is-style-midiateca-search-bar .wp-block-search__inside-wrapper .wp-block-search__button {
+        padding: .125em 1em;
+    }
+    .hero-section[data-type="type-2"] > [class*="ct-container"] {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .ct-newsletter-subscribe-widget {
+        padding: 24px 36px;
+    }
+    [data-vertical-spacing*="top"] .hero-section .ct-breadcrumbs {
+        left: 2px;
+    }
+    .tainacan-item-section__metadata-thumbnail {
+        display: none;
+        visibility: hidden;
+    }
+    .theme-items-list {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

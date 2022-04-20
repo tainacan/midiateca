@@ -1,0 +1,310 @@
+/* Page title on editor side */
+.editor-post-title__block .editor-post-title__input {
+    font-family: RobotoCondensed, Sans-Serif !important;
+    font-size: 64px;
+}
+
+/* Special Heading Font Family */
+.is-style-midiateca-barlow-font {
+    font-family: 'Barlow Condensed', Sans-Serif !important;
+}
+
+/* Special style rounded blocks*/
+.is-style-midiateca-rounded,
+.wp-block-image.is-style-midiateca-rounded img,
+.wp-block-cover.is-style-midiateca-rounded::before,
+.wp-block-cover.is-style-midiateca-rounded img.wp-block-cover__image-background,
+.wp-block-cover.is-style-midiateca-rounded video.wp-block-cover__video-background,
+.wp-block-tainacan-carousel-terms-list.is-style-midiateca-rounded .term-list-item,
+.wp-block-tainacan-carousel-terms-list.is-style-midiateca-rounded .term-list-item img,
+.wp-block-tainacan-carousel-collections-list.is-style-midiateca-rounded .collection-list-item,
+.wp-block-tainacan-carousel-collections-list.is-style-midiateca-rounded .collection-list-item img {
+    border-radius: 8px;
+}
+.wp-block-getwid-images-slider.is-style-midiateca-rounded .wp-block-getwid-images-slider__item {
+    border-radius: 8px;
+    overflow: hidden;
+}
+.wp-block-tainacan-carousel-terms-list.is-style-midiateca-rounded .term-list-item img,
+.wp-block-tainacan-carousel-collections-list.is-style-midiateca-rounded .collection-list-item img {
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
+    object-fit: cover;
+    max-height: 295px;
+    height: 295px !important;
+}
+.wp-block-tainacan-carousel-terms-list .tainacan-carousel .swiper-container a > span,
+.wp-block-tainacan-carousel-terms-list .tainacan-carousel .swiper-container a:hover > span,
+.wp-block-tainacan-carousel-collections-list .tainacan-carousel .swiper-container a > span,
+.wp-block-tainacan-carousel-collections-list .tainacan-carousel .swiper-container a:hover > span {
+    font-size: 22px;
+    color: var(--paletteColor1, #642d39);
+}
+
+/* Rounded Terms carousel has label inside the picture */
+.wp-block-tainacan-carousel-terms-list.is-style-midiateca-rounded .term-list-item a>span,
+.wp-block-tainacan-carousel-collections-list.is-style-midiateca-rounded .collection-list-item a>span {
+    position: absolute;
+    bottom: 0;
+    padding: 16px 20px !important;
+    color: var(--tainacan-block-gray0, #f8f9fb) !important;
+}
+
+/* Special style cirle blocks*/
+.wp-block-getwid-images-slider.is-style-midiateca-circle .wp-block-getwid-images-slider__item img,
+.wp-block-tainacan-carousel-terms-list.is-style-midiateca-circle .term-list-item img,
+.wp-block-tainacan-carousel-collections-list.is-style-midiateca-circle .collection-list-item img {
+    border-radius: 100%;
+    -webkit-filter: brightness(0.8);
+    filter: brightness(0.8);
+    overflow: hidden;
+}
+.wp-block-getwid-images-slider.is-style-midiateca-circle .wp-block-getwid-images-slider__item,
+.wp-block-tainacan-carousel-terms-list.is-style-midiateca-circle .term-list-item,
+.wp-block-tainacan-carousel-collections-list.is-style-midiateca-circle .collection-list-item {
+    text-align: center;
+    font-size: 1.375rem;
+}
+
+/* Home banner logo */
+.wp-block-getwid-section .wp-block-group__inner-container svg {
+    margin-bottom: -4rem !important;
+    display: block;
+}
+
+/* Inner content of cover blocks should be 100% even with the positioning set to custom */
+.wp-block-cover-image.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container,
+.wp-block-cover.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container {
+    width: 100%;
+}
+
+/* Midiateca museu cards (also home page) */
+.wp-block-columns.midiateca-museu-cards .wp-block-cover__inner-container {
+    width: 100% !important;
+}
+.wp-block-columns.midiateca-museu-cards .wp-block-cover__inner-container .wp-block-columns {
+    margin: 0;
+    width: 100%;
+}
+.wp-block-columns.midiateca-museu-cards .wp-block-cover__inner-container .wp-block-columns>.wp-block-column:not(:first-child) {
+    margin-left: 0.75em;
+}
+.wp-block-columns.midiateca-museu-cards .wp-block-cover__inner-container .wp-block-columns>.wp-block-column p {
+    margin-bottom: 0;
+}
+
+/* Facets block inside a cover block should inherit text color */
+.wp-block-cover .wp-block-tainacan-facets-list ul.facets-list.facets-layout-list li.facet-list-item a,
+.wp-block-cover .wp-block-tainacan-facets-list ul.facets-list-edit.facets-layout-list li.facet-list-item a {
+    color: inherit !important;
+}
+
+/* Title inside the blocks should not have margin */
+.wp-block-cover h1,
+.wp-block-cover h2,
+.wp-block-cover h3,
+.wp-block-cover h4,
+.wp-block-cover h5,
+.wp-block-cover h6,
+.wp-block-cover .wp-block-tainacan-facets-list,
+.wp-block-cover .wp-block-tainacan-dynamic-items-list,
+.wp-block-button {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* Outline button should have white border */
+div.is-style-outline > .wp-block-button__link {
+    border-color: white;
+}
+
+/* WordPress core Search Bar with Basiliana style */
+.wp-block-search.is-style-midiateca-search-bar .wp-block-search__inside-wrapper {
+    border-radius: 8px;
+    padding: 0;
+    border: none;
+}
+.wp-block-search.is-style-midiateca-search-bar .wp-block-search__inside-wrapper .wp-block-search__input {
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 1px solid var(--paletteColor1, #642d39);
+    padding: 0 0 0 2.25em;
+    min-height: 48px;
+    margin-right: -3px;
+}
+.wp-block-search.is-style-midiateca-search-bar .wp-block-search__inside-wrapper .wp-block-search__button {
+    margin-left: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+    background-color: var(--paletteColor1, #642d39);
+    color: white;
+    padding: .125em 5.9375em;
+}
+
+/* Cover images carousel with figcaption layer to darken it */
+.wp-block-getwid-images-slider:not(.is-style-midiateca-circle).has-captions .wp-block-getwid-images-slider__item figcaption {
+    display: flex !important;
+    align-items: flex-end;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: rgba(34,34,34,0.5);
+    background-image: none;
+    padding: 20px;
+    height: 100%;
+}
+.wp-block-getwid-images-slider.is-style-midiateca-circle.has-captions .wp-block-getwid-images-slider__item figcaption {
+    align-items: flex-end;
+    font-size: 22px;
+    font-weight: bold;
+    bottom: -3.25rem;
+}
+.wp-block-getwid-images-slider.is-style-midiateca-circle.has-captions .slick-list {
+    padding-bottom: 3rem;
+}
+
+/* The posts and images gap should have more space to the arrows */
+.wp-block-getwid-post-carousel.has-slides-gap-large .slick-list,
+.wp-block-getwid-images-slider.has-slides-gap-large .slick-list {
+    margin: 0;
+}
+
+/* Midiateca Facets Section */
+.wp-block-getwid-section.midiateca-facets-section hr {
+    margin-top: -18px;
+    height: 1px;
+}
+.wp-block-getwid-section.midiateca-facets-section .wp-block-tainacan-facets-list {
+    margin: 0em auto 2em auto;
+}
+.wp-block-getwid-section.midiateca-facets-section .wp-block-tainacan-facets-list .facets-list {    
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.wp-block-getwid-section.midiateca-facets-section .wp-block-tainacan-facets-list ul.facets-list.facets-layout-list li.facet-list-item .facet-label-and-count span:first-child,
+.wp-block-getwid-section.midiateca-facets-section .wp-block-tainacan-facets-list ul.facets-list-edit.facets-layout-list li.facet-list-item .facet-label-and-count span:first-child {
+    font-weight: bold;
+    color: var(--paletteColor1, #642d39);
+}
+
+/* Midiateca Museo Pattern */
+.is-midiateca-museo-cover {
+    margin-bottom: -4rem;
+}
+.is-midiateca-museo-logo {
+    border: 2px solid white;
+}
+.is-midiateca-museo-group h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.is-midiateca-museo-group h2 {
+    margin-top: 0;
+}
+.is-midiateca-museo-group hr {
+    height: 1px;
+    background-color: #dddddd;
+}
+
+/* When displaying image as an item, the caption should be different */
+.wp-block-image.is-style-midiateca-item-image figcaption {
+    text-align: left;
+    --fontSize: 1rem;
+}
+
+/* Slick carousel arrows should be accent color */
+.wp-block-getwid-images-slider .slick-prev::before,
+.wp-block-getwid-images-slider .slick-next::before,
+.wp-block-getwid-media-text-slider .slick-prev::before,
+.wp-block-getwid-media-text-slider .slick-next::before,
+.wp-block-getwid-post-slider .slick-prev::before,
+.wp-block-getwid-post-slider .slick-next::before,
+.wp-block-getwid-post-carousel .slick-prev::before,
+.wp-block-getwid-post-carousel .slick-next::before {
+    color: var(--paletteColor1, #642d39);
+}
+.wp-block-getwid-images-slider.is-style-midiateca-rounded .wp-block-getwid-images-slider__item {
+    max-width: 256px;
+}
+.wp-block-getwid-images-slider.is-style-midiateca-rounded.alignfull.has-arrows-outside .slick-prev {
+    left: -32px;
+}
+.wp-block-getwid-images-slider.is-style-midiateca-rounded.alignfull.has-arrows-outside .slick-next {
+    right: -48px;
+}
+
+@media screen and (max-width: 600px ) {
+    .wp-block-getwid-images-slider.is-style-midiateca-rounded.alignfull.has-arrows-outside .slick-prev {
+        left: -22px;
+    }
+    .wp-block-getwid-images-slider.is-style-midiateca-rounded.alignfull.has-arrows-outside .slick-next {
+        right: -38px;
+    }
+}
+
+/* New styles for buttons in dark backgrounds */
+/* Fill button to be used on dark backgrounds */
+.wp-block-button.is-style-midiateca-fill-dark .wp-block-button__link:not(.has-background) {
+    background-color: var(--palette-color-15, #ffebbd);
+}
+.wp-block-button.is-style-midiateca-fill-dark:not(.has-text-color),
+.wp-block-button.is-style-midiateca-fill-dark .wp-block-button__link:not(.has-text-color) {
+    color: var(--palette-color-1, #642d39);
+}
+.wp-block-button.is-style-midiateca-fill-dark:hover .wp-block-button__link:not(.has-background)  {
+    background-color: var(--palette-color-9, #ecd297);
+}
+.wp-block-button.is-style-midiateca-fill-dark:hover:not(.has-text-color),
+.wp-block-button.is-style-midiateca-fill-dark:hover .wp-block-button__link:not(.has-text-color) {
+    color: var(--palette-color-1, #642d39);
+}
+.wp-block-button.is-style-midiateca-fill-dark:focus .wp-block-button__link:not(.has-background)  {
+    background-color: var(--palette-color-16, #806a38);
+}
+.wp-block-button.is-style-midiateca-fill-dark:focus:not(.has-text-color),
+.wp-block-button.is-style-midiateca-fill-dark:focus .wp-block-button__link:not(.has-text-color){
+    color: var(--palette-color-2, #30020C);
+}
+
+/* Outline button to be used on dark backgrounds */
+.is-style-midiateca-outline-dark > .wp-block-button__link,
+.wp-block-button__link.is-style-midiateca-outline-dark {
+    border-width: 2px !important;
+    border-style: solid !important;
+}
+.wp-block-button.is-style-midiateca-outline-dark:not(.has-background),
+.wp-block-button.is-style-midiateca-outline-dark .wp-block-button__link:not(.has-background) {
+    background-color: transparent;
+}
+.wp-block-button.is-style-midiateca-outline-dark:not(.has-text-color),
+.wp-block-button.is-style-midiateca-outline-dark .wp-block-button__link:not(.has-text-color) {
+    color: var(--palette-color-20, #f5f5f5);
+    border-color: var(--palette-color-20, #f5f5f5);
+}
+.wp-block-button.is-style-midiateca-outline-dark:hover:not(.has-background),
+.wp-block-button.is-style-midiateca-outline-dark:hover .wp-block-button__link:not(.has-background)  {
+    background-color: transparent;
+}
+.wp-block-button.is-style-midiateca-outline-dark:hover:not(.has-text-color),
+.wp-block-button.is-style-midiateca-outline-dark:hover .wp-block-button__link:not(.has-text-color) {
+    color: var(--palette-color-10, #accfd8);
+    border-color: var(--palette-color-10, #accfd8);
+}
+.wp-block-button.is-style-midiateca-outline-dark:focus:not(.has-background),
+.wp-block-button.is-style-midiateca-outline-dark:focus .wp-block-button__link:not(.has-background)  {
+    background-color: transparent;
+}
+.wp-block-button.is-style-midiateca-outline-dark:focus:not(.has-text-color),
+.wp-block-button.is-style-midiateca-outline-dark:focus .wp-block-button__link:not(.has-text-color){
+    color: var(--palette-color-14, #e5acb9);
+    border-color: var(--palette-color-14, #e5acb9);
+}
+
+/* Default outlined buttons should be really outline */
+.is-style-outline:hover > .wp-block-button__link,
+.wp-block-button__link.is-style-outline:hover {
+    background-color: transparent !important;
+}

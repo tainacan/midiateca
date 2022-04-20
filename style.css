@@ -1,0 +1,29 @@
+/**
+ * Theme Name: Midiateca
+ * Description: Midiateca capixaba - a child theme of Blocksy
+ * Author: wetah
+ * Template: blocksy
+ * Version: 0.0.1
+ * Text Domain: midiateca
+ */
+
+ /* Color and size variables used across site */
+@import "./css/variables.css";
+
+/* Tainacan-related Styles */
+@import "./css/tainacan.css";
+
+/* Custom Block Styles */
+@import "./css/block-styles.css";
+
+/* Custom elements tweaks */
+@import "./css/elements.css";
+
+/* Logo animation */
+@import "./css/logo.css";
+
+/* Search modal tweaks */
+@import "./css/search-modal.css";
+
+/* Updates to the footer widgets */
+@import "./css/footer.css";

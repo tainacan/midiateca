@@ -1,0 +1,188 @@
+@keyframes logo_expand_1 {
+    from {
+        transform: translate(0px, 0px);
+        fill-opacity: 0.4;
+    }
+    to {
+        transform: translate(-25%, -25%);
+        fill-opacity: 0.9;
+    }
+}
+@keyframes logo_expand_2 {
+    from {
+        transform: translate(0px, 0px);
+        fill-opacity: 0.4;
+    }
+    to {
+        transform: translate(25%, 25%);
+        fill-opacity: 0.9;
+    }
+}
+@keyframes logo_expand_3 {
+    from {
+        transform: translate(0px, 0px);
+        fill-opacity: 0.4;
+    }
+    to {
+        transform: translate(25%, -25%);
+        fill-opacity: 0.9;
+    }
+}
+@keyframes logo_expand_4 {
+    from {
+        transform: translate(0px, 0px);
+        fill-opacity: 0.4;
+    }
+    to {
+        transform: translate(-25%, 25%);
+        fill-opacity: 0.9;
+    }
+}
+
+@keyframes logo_rotate_1 {
+    0% {
+        transform: rotate(0deg) translate(0px, 0px);
+        fill-opacity: 0.4;
+    }
+    25% {
+        transform: rotate(-45deg) translate(0px, 0px);
+        fill-opacity: 0.4;
+    }
+    65% {
+        transform: rotate(-45deg) translate(0%, -35%);
+        fill-opacity: 0.9;
+    }
+    90% {
+        transform: rotate(-45deg) translate(0px, 0px);
+        fill-opacity: 0.4;
+    }
+}
+@keyframes logo_rotate_2 {
+    0% {
+        transform: rotate(0deg) translate(0px, 0px);
+        fill-opacity: 0.4;
+    }
+    25% {
+        transform: rotate(45deg) translate(0px, 0px);
+        fill-opacity: 0.4;
+    }
+    65% {
+        transform: rotate(45deg) translate(0%, -35%);
+        fill-opacity: 0.9;
+    }
+    90% {
+        transform: rotate(45deg) translate(0px, 0px);
+        fill-opacity: 0.4;
+    }
+}
+@keyframes logo_rotate_3 {
+    0% {
+        transform: rotate(0deg) translate(0px, 0px);
+        fill-opacity: 0.4;
+    }
+    25% {
+        transform: rotate(135deg) translate(0px, 0px);
+        fill-opacity: 0.4;
+    }
+    65% {
+        transform: rotate(135deg) translate(0%, -35%);
+        fill-opacity: 0.9;
+    }
+    90% {
+        transform: rotate(135deg) translate(0px, 0px);
+        fill-opacity: 0.4;
+    }
+}
+@keyframes logo_rotate_4 {
+    0% {
+        transform: rotate(0deg) translate(0px, 0px);
+        fill-opacity: 0.4;
+    }
+    25% {
+        transform: rotate(-135deg) translate(0px, 0px);
+        fill-opacity: 0.4;
+    }
+    65% {
+        transform: rotate(-135deg) translate(0%, -35%);
+        fill-opacity: 0.9;
+    }
+    90% {
+        transform: rotate(-135deg) translate(0px, 0px);
+        fill-opacity: 0.4;
+    }
+}
+
+@keyframes logo_pulse{
+    0% {
+        transform: scale(1.0);
+    }
+    25% {
+        transform: scale(1.15);
+    }
+    50% {
+        transform: scale(1.0);
+    }
+    75% {
+        transform: scale(1.15);
+    }
+}
+
+svg.acervo-logo-expansao:hover,
+svg.acervo-logo-expansao:hover path,
+svg.acervo-logo-completo:hover,
+svg.acervo-logo-completo:hover path {
+    animation-play-state: running;
+}
+svg.acervo-logo-completo path {
+    transform-origin: center;
+}
+/* svg.acervo-logo-expansao,
+svg.acervo-logo-completo {
+    animation-name: logo_pulse;
+    animation-play-state: paused;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    display: block;
+} */
+svg.acervo-logo-expansao path {
+    animation-play-state: paused;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+svg.acervo-logo-completo path {
+    animation-play-state: paused;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+svg.acervo-logo-completo path:nth-of-type(1) {
+    animation-name: logo_rotate_1;
+}
+svg.acervo-logo-completo path:nth-of-type(2) {
+    animation-name: logo_rotate_2;
+}
+svg.acervo-logo-completo path:nth-of-type(3) {
+    animation-name: logo_rotate_3;
+}
+svg.acervo-logo-completo path:nth-of-type(4) {
+    animation-name: logo_rotate_4;
+}
+
+svg.acervo-logo-expansao path:nth-of-type(1) {
+    animation-name: logo_expand_1;
+}
+svg.acervo-logo-expansao path:nth-of-type(2) {
+    animation-name: logo_expand_2;
+}
+svg.acervo-logo-expansao path:nth-of-type(3) {
+    animation-name: logo_expand_3;
+}
+svg.acervo-logo-expansao path:nth-of-type(4) {
+    animation-name: logo_expand_4;
+}
