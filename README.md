@@ -1,1 +1,1 @@
-# Tema do Acervo em Rede
+# Tema do Projeto Midiateca Capixaba
