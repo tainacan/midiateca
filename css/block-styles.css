@@ -192,21 +192,21 @@ div.is-style-outline > .wp-block-button__link {
 
 /* Midiateca institution Pattern */
 .is-midiateca-institution-cover {
-    margin-bottom: -4rem;
+    margin-bottom: -4rem !important;
 }
 .is-midiateca-institution-logo {
-    border: 2px solid white;
+    border: 2px solid white !important;
 }
 .is-midiateca-institution-group h1 {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 .is-midiateca-institution-group h2 {
-    margin-top: 0;
+    margin-top: 0 !important;
 }
 .is-midiateca-institution-group hr {
-    height: 1px;
-    background-color: #dddddd;
+    height: 1px !important;
+    background-color: #dddddd !important;
 }
 
 /* When displaying image as an item, the caption should be different */
