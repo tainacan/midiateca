@@ -16,7 +16,7 @@ if ( function_exists('register_block_style') ) {
         register_block_style(
             'core/heading',
             array(
-                'name'  => 'midiateca-barlow-font',
+                'name'  => 'midiateca-oxanium-font',
                 'label' =>  __('Fonte Alternativa', 'midiateca'),
                 'isDefault' => false,
             )

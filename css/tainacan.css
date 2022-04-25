@@ -1,6 +1,6 @@
 /* Item list pages */
 .tainacan-collection-header {
-    background-color: #73424D;
+    background-color: var(--paletteColor6, #f5f5f5);
     position: relative;
     margin-bottom: 3rem;
 }
@@ -15,28 +15,28 @@
     position: absolute;
     top: calc(-1 * var(--content-vertical-spacing) + 6px) !important;
     font-size: 14px;
-    --linkInitialColor: white;
-    color: white;
+    --linkInitialColor: var(--paletteColor4, #333333);
+    color: var(--paletteColor4, #333333);
     opacity: 0.75;
 }
 .tainacan-collection-header .midiateca-header-elements {
    top: calc(-1 * var(--content-vertical-spacing) + 6px);
 }
 .tainacan-collection-header .page-title {
-    color: var(--palette-color-9, #ecd297);
+    color: var(--palette-color-1, #C4544E);
     font-size: 48px;
     text-transform: uppercase;
 }
 .tainacan-collection-header .page-description {
-    color: white !important;
+    color: var(--paletteColor4, #333333) !important;
 }
 
 .tainacan-collection-header.tainacan-collection-header--term-page {
-    background-color: #F5F5F5;
+    background-color: var(--paletteColor6, #f5f5f5);
 }
 .tainacan-collection-header.tainacan-collection-header--term-page .ct-breadcrumbs {
-    color: #040203;
-    --linkInitialColor: #040203;
+    color: var(--paletteColor3, #7c7c7c);
+    --linkInitialColor: var(--paletteColor3, #7c7c7c);
     opacity: 0.75;
 }
 
@@ -46,10 +46,10 @@
     margin-right: 30px;
 }
 .tainacan-collection-header.tainacan-collection-header--term-page .page-title {
-    color: var(--paletteColor1, #642d39) !important; 
+    color: var(--paletteColor1, #C4544E) !important; 
 }
 .tainacan-collection-header.tainacan-collection-header--term-page .page-description {
-    color: #040203 !important;
+    color: var(--paletteColor3, #7c7c7c) !important;
 }
 
 /* In the Museo taxonomy, we don't want to shot the title label, is redundant */
@@ -61,8 +61,8 @@ body.tax-tnc_tax_34 .tainacan-collection-header.tainacan-collection-header--term
 .tainacan-modal,
 .theme-items-list {
     --borderRadius: 8px;
-    --tainacan-item-heading-background-color: var(--paletteColor8, #f5f4ed);
-    --tainacan-item-heading-hover-background-color: var(--palette-color-9, #ecd297);
+    --tainacan-item-heading-background-color: var(--paletteColor8, #ffffff);
+    --tainacan-item-heading-hover-background-color: var(--palette-color-1, #C4544E);
 }
 .theme-items-list:not(.is-fullscreen) {
     top: 0rem !important;
@@ -89,7 +89,7 @@ body.tax-tnc_tax_34 .tainacan-collection-header.tainacan-collection-header--term
 .theme-items-list .filter-item-forms .collapse-trigger .collapse-label {
     font-weight: bold;
     font-size: 1rem;
-    color: var(--tainacan-secondary, #642d39);
+    color: var(--tainacan-secondary, #C4544E);
 }
 .tainacan-modal .filter-item-forms .collapse-trigger .icon,
 .theme-items-list .filter-item-forms .collapse-trigger .icon,
@@ -131,12 +131,12 @@ body.tax-tnc_tax_34 .tainacan-collection-header.tainacan-collection-header--term
 .theme-items-list .tainacan-form .collapse-all,
 .tainacan-modal .tainacan-form .collapse-all .icon .tainacan-icon::before,
 .theme-items-list .tainacan-form .collapse-all  .icon .tainacan-icon::before {
-    color: var(--palette-color-13, #cd403c) !important;
+    color: var(--palette-color-1, #cd403c) !important;
 }
 .filter-tags-list #button-clear-all {
     position: absolute;
     right: 0;
-    border: 1px solid var(--palette-color-13, #cd403c);
+    border: 1px solid var(--palette-color-1, #cd403c);
     border-radius: 8px;
     padding: 5px 16px;
     margin-top: -1rem;
@@ -212,7 +212,7 @@ body.tax-tnc_tax_34 .tainacan-collection-header.tainacan-collection-header--term
 }
 .tainacan-item-single-page .tainacan-item-single .tainacan-metadata-label {
     --fontSize: 14px !important;
-    color: #040203;
+    color: #7c7c7c;
 }
 .tainacan-item-single-page .hero-section {
     padding-left: 64px;

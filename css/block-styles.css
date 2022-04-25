@@ -5,8 +5,8 @@
 }
 
 /* Special Heading Font Family */
-.is-style-midiateca-barlow-font {
-    font-family: 'Barlow Condensed', Sans-Serif !important;
+.is-style-midiateca-oxanium-font {
+    font-family: 'Oxanium', Sans-Serif !important;
 }
 
 /* Special style rounded blocks*/
@@ -21,7 +21,7 @@
 .wp-block-tainacan-carousel-collections-list.is-style-midiateca-rounded .collection-list-item img {
     border-radius: 8px;
 }
-.wp-block-getwid-images-slider.is-style-midiateca-rounded .wp-block-getwid-images-slider__item {
+.wp-block-getwid-images-slider.is-style-midiateca-rounded .wp-block-getwid-images-slider__item figure {
     border-radius: 8px;
     overflow: hidden;
 }
@@ -38,7 +38,7 @@
 .wp-block-tainacan-carousel-collections-list .tainacan-carousel .swiper-container a > span,
 .wp-block-tainacan-carousel-collections-list .tainacan-carousel .swiper-container a:hover > span {
     font-size: 22px;
-    color: var(--paletteColor1, #642d39);
+    color: var(--paletteColor1, #C4544E);
 }
 
 /* Rounded Terms carousel has label inside the picture */
@@ -128,7 +128,7 @@ div.is-style-outline > .wp-block-button__link {
     background-color: white;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    border: 1px solid var(--paletteColor1, #642d39);
+    border: 1px solid var(--paletteColor1, #C4544E);
     padding: 0 0 0 2.25em;
     min-height: 48px;
     margin-right: -3px;
@@ -140,7 +140,7 @@ div.is-style-outline > .wp-block-button__link {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border: none;
-    background-color: var(--paletteColor1, #642d39);
+    background-color: var(--paletteColor1, #C4544E);
     color: white;
     padding: .125em 5.9375em;
 }
@@ -151,7 +151,7 @@ div.is-style-outline > .wp-block-button__link {
     align-items: flex-end;
     font-size: 22px;
     font-weight: bold;
-    background-color: rgba(34,34,34,0.5);
+    background-color: none; /*rgba(34,34,34,0.5); */
     background-image: none;
     padding: 20px;
     height: 100%;
@@ -187,7 +187,7 @@ div.is-style-outline > .wp-block-button__link {
 .wp-block-getwid-section.midiateca-facets-section .wp-block-tainacan-facets-list ul.facets-list.facets-layout-list li.facet-list-item .facet-label-and-count span:first-child,
 .wp-block-getwid-section.midiateca-facets-section .wp-block-tainacan-facets-list ul.facets-list-edit.facets-layout-list li.facet-list-item .facet-label-and-count span:first-child {
     font-weight: bold;
-    color: var(--paletteColor1, #642d39);
+    color: var(--paletteColor1, #C4544E);
 }
 
 /* Midiateca Museo Pattern */
@@ -224,7 +224,7 @@ div.is-style-outline > .wp-block-button__link {
 .wp-block-getwid-post-slider .slick-next::before,
 .wp-block-getwid-post-carousel .slick-prev::before,
 .wp-block-getwid-post-carousel .slick-next::before {
-    color: var(--paletteColor1, #642d39);
+    color: var(--paletteColor1, #C4544E);
 }
 .wp-block-getwid-images-slider.is-style-midiateca-rounded .wp-block-getwid-images-slider__item {
     max-width: 256px;
@@ -247,26 +247,17 @@ div.is-style-outline > .wp-block-button__link {
 
 /* New styles for buttons in dark backgrounds */
 /* Fill button to be used on dark backgrounds */
-.wp-block-button.is-style-midiateca-fill-dark .wp-block-button__link:not(.has-background) {
-    background-color: var(--palette-color-15, #ffebbd);
-}
 .wp-block-button.is-style-midiateca-fill-dark:not(.has-text-color),
 .wp-block-button.is-style-midiateca-fill-dark .wp-block-button__link:not(.has-text-color) {
-    color: var(--palette-color-1, #642d39);
-}
-.wp-block-button.is-style-midiateca-fill-dark:hover .wp-block-button__link:not(.has-background)  {
-    background-color: var(--palette-color-9, #ecd297);
+    color: var(--palette-color-1, #C4544E);
 }
 .wp-block-button.is-style-midiateca-fill-dark:hover:not(.has-text-color),
 .wp-block-button.is-style-midiateca-fill-dark:hover .wp-block-button__link:not(.has-text-color) {
-    color: var(--palette-color-1, #642d39);
-}
-.wp-block-button.is-style-midiateca-fill-dark:focus .wp-block-button__link:not(.has-background)  {
-    background-color: var(--palette-color-16, #806a38);
+    color: var(--palette-color-1, #C4544E);
 }
 .wp-block-button.is-style-midiateca-fill-dark:focus:not(.has-text-color),
 .wp-block-button.is-style-midiateca-fill-dark:focus .wp-block-button__link:not(.has-text-color){
-    color: var(--palette-color-2, #30020C);
+    color: var(--palette-color-2, #c82118);
 }
 
 /* Outline button to be used on dark backgrounds */
@@ -281,8 +272,8 @@ div.is-style-outline > .wp-block-button__link {
 }
 .wp-block-button.is-style-midiateca-outline-dark:not(.has-text-color),
 .wp-block-button.is-style-midiateca-outline-dark .wp-block-button__link:not(.has-text-color) {
-    color: var(--palette-color-20, #f5f5f5);
-    border-color: var(--palette-color-20, #f5f5f5);
+    color: var(--palette-color-6, #f5f5f5);
+    border-color: var(--palette-color-6, #f5f5f5);
 }
 .wp-block-button.is-style-midiateca-outline-dark:hover:not(.has-background),
 .wp-block-button.is-style-midiateca-outline-dark:hover .wp-block-button__link:not(.has-background)  {
@@ -290,17 +281,12 @@ div.is-style-outline > .wp-block-button__link {
 }
 .wp-block-button.is-style-midiateca-outline-dark:hover:not(.has-text-color),
 .wp-block-button.is-style-midiateca-outline-dark:hover .wp-block-button__link:not(.has-text-color) {
-    color: var(--palette-color-10, #accfd8);
-    border-color: var(--palette-color-10, #accfd8);
+    color: var(--palette-color-6, #f5f5f5);
+    border-color: var(--palette-color-6, #f5f5f5);
 }
 .wp-block-button.is-style-midiateca-outline-dark:focus:not(.has-background),
 .wp-block-button.is-style-midiateca-outline-dark:focus .wp-block-button__link:not(.has-background)  {
     background-color: transparent;
-}
-.wp-block-button.is-style-midiateca-outline-dark:focus:not(.has-text-color),
-.wp-block-button.is-style-midiateca-outline-dark:focus .wp-block-button__link:not(.has-text-color){
-    color: var(--palette-color-14, #e5acb9);
-    border-color: var(--palette-color-14, #e5acb9);
 }
 
 /* Default outlined buttons should be really outline */

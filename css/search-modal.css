@@ -8,7 +8,7 @@
 }
 #search-modal .search-form {
     margin-bottom: 0;
-    --form-field-border-focus-color: var(--palette-color-9, #ecd297) !important;
+    --form-field-border-focus-color: var(--palette-color-1, #C4544E) !important;
 }
 #search-modal .midiateca-search-modal-facets-list {
     margin: 0 auto auto auto;
@@ -88,7 +88,7 @@
     --form-font-size: 1.125rem;
     --form-field-height: 56px;
     --form-field-border-width: 0 0 3px 0;
-    --form-field-border-initial-color: var(--palette-color-9, #ecd297);
+    --form-field-border-initial-color: var(--palette-color-1, #C4544E);
 }
 #search-modal input+button {
     --search-button-size: 70px;

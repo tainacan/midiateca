@@ -6,32 +6,32 @@ function midiateca_filter_palette( $args ) {
 		array(
 			'name' => 'Açaí Midiateca',
 			'slug' => 'palette-color-1',
-			'color' => 'var(--paletteColor1, #642d39)'
+			'color' => 'var(--paletteColor1, #C4544E)'
 		),
 		array(
 			'name' => 'Açaí Midiateca Escuro',
 			'slug' => 'palette-color-2',
-			'color' => 'var(--paletteColor2, #30020C)'
+			'color' => 'var(--paletteColor2, #c82118)'
 		),
 		array(
 			'name' => 'Cor de Texto Midiateca',
 			'slug' => 'palette-color-3',
-			'color' => 'var(--paletteColor3, #040203)'
+			'color' => 'var(--paletteColor3, #7c7c7c)'
 		),
 		array(
 			'name' => 'Cor de Título Midiateca',
 			'slug' => 'palette-color-4',
-			'color' => 'var(--paletteColor4, #2e1e1e)'
+			'color' => 'var(--paletteColor4, #333333)'
 		), 
 		array(
 			'name' => 'Cor de Borda Midiateca',
 			'slug' => 'palette-color-5',
-			'color' => 'var(--paletteColor5, #c9c9c9)'
+			'color' => 'var(--paletteColor5, #979797)'
 		),
 		array(
 			'name' => 'Cinza Midiateca',
 			'slug' => 'palette-color-6',
-			'color' => 'var(--paletteColor6, #ececec)'
+			'color' => 'var(--paletteColor6, #f5f5f5)'
 		),
 		array(
 			'name' => 'Branco Midiateca',
