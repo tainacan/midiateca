@@ -53,16 +53,11 @@
     color: var(--paletteColor3, #7c7c7c) !important;
 }
 
-/* In the Museo taxonomy, we don't want to shot the title label, is redundant */
-body.tax-tnc_tax_34 .tainacan-collection-header.tainacan-collection-header--term-page .ct-title-label {
-    display: none;
-}
-
 /* The items list component */
 .tainacan-modal,
 .theme-items-list {
     --boxShadow: none;
-    --borderRadius: 8px;
+    --borderRadius: 0px;
     --tainacan-primary: rgba(196, 84, 78, 0.3);
 }
 .theme-items-list:not(.is-fullscreen) {
@@ -212,7 +207,7 @@ body.tax-tnc_tax_34 .tainacan-collection-header.tainacan-collection-header--term
 }
 .tainacan-item-single-page .tainacan-item-single .tainacan-metadata-label {
     --fontSize: 14px !important;
-    color: #7c7c7c;
+    color: var(--palette-color-3, #7c7c7c);
 }
 .tainacan-item-single-page .hero-section {
     padding-left: 64px;

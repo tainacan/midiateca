@@ -14,7 +14,7 @@
 .slick-prev::before {
     font-family: 'dashicons';
     font-size: 30px;
-    color: var(--tainacan-block-primary, #298596);
+    color: var(--tainacan-block-primary, #C4544E);
 }
 .slick-next::before {
     content: '\f344';
@@ -64,7 +64,7 @@
 }
 
 .midiateca-header-elements .midiateca-header-button {
-    border: 1px solid var(--palette-color-6, #f5f5f5);
+    border: 1px solid var(--palette-color-3, #7c7c7c);
     background-color: transparent;
     border-radius: 100%;
     padding: 0.5rem 1.2rem 0.5rem 0.8rem;
@@ -89,7 +89,7 @@
 }
 .midiateca-header-elements .midiateca-header-button::hover,
 .midiateca-header-elements .midiateca-header-button::focus {
-    border: 1px solid var(--palette-color-6, #f5f5f5);
+    border: 1px solid var(--palette-color-4, #333333);
 }
 .midiateca-header-elements .midiateca-header-button .icon {
     position: relative;
@@ -109,40 +109,14 @@
     background-color: var(--paletteColor2, #c82118);
 }
 .midiateca-header-elements .midiateca-header-button:focus .icon i::before {
-    color: var(--palette-color14, #e5acb9);
+    color: var(--palette-color-1, #C4544E);
 }
 .midiateca-header-elements .midiateca-header-button:focus .icon i::after {
-    background-color: var(--palette-color14, #e5acb9);
+    background-color: var(--palette-color-1, #C4544E);
 }
 .midiateca-header-elements .midiateca-header-button .icon i.dashicons {
     line-height: 1.875rem;
     width: 1.75rem;
-}
-
-/* Header buttons inside dark backrounds */
-body.single-post .midiateca-header-elements .midiateca-header-button .icon i::before,
-header.tainacan-collection-header:not(.tainacan-collection-header--term-page) .midiateca-header-elements .midiateca-header-button .icon i::before {
-    color: var(--paletteColor7, #ffffff);
-}
-body.single-post .midiateca-header-elements .midiateca-header-button .icon i::after,
-header.tainacan-collection-header:not(.tainacan-collection-header--term-page)  .midiateca-header-elements .midiateca-header-button .icon i::after {
-    background-color: var(--paletteColor7, #ffffff);
-}
-body.single-post .midiateca-header-elements .midiateca-header-button:hover .icon i::before,
-header.tainacan-collection-header:not(.tainacan-collection-header--term-page) .midiateca-header-elements .midiateca-header-button:hover .icon i::before {
-    color: var(--palette-color-6, #f5f5f5);
-}
-body.single-post .midiateca-header-elements .midiateca-header-button:hover .icon i::after,
-header.tainacan-collection-header:not(.tainacan-collection-header--term-page)  .midiateca-header-elements .midiateca-header-button:hover .icon i::after {
-    background-color: var(--palette-color-6, #f5f5f5);
-}
-body.single-post .midiateca-header-elements .midiateca-header-button:focus .icon i::before,
-header.tainacan-collection-header:not(.tainacan-collection-header--term-page) .midiateca-header-elements .midiateca-header-button:focus .icon i::before {
-    color: var(--palette-color14, #e5acb9);
-}
-body.single-post .midiateca-header-elements .midiateca-header-button:focus .icon i::after,
-header.tainacan-collection-header:not(.tainacan-collection-header--term-page) .midiateca-header-elements .midiateca-header-button:focus .icon i::after {
-    background-color: var(--palette-color14, #e5acb9);
 }
 
 /* Midiateca Social Icons share list */
@@ -166,7 +140,7 @@ header.tainacan-collection-header:not(.tainacan-collection-header--term-page) .m
 }
 .midiateca-social-icons [data-icons-type] > * {
     padding: 12px;
-    border: 1px solid var(--palette-color-6, #f5f5f5);
+    border: 1px solid var(--palette-color-1, #C4544E);
     background-color: white;
     display: block;
     border-radius: 100%;
@@ -204,13 +178,13 @@ body.single-post .hero-section .page-description {
         padding-right: 6px;
     }
 
-    .wp-block-columns.midiateca-museu-cards>.wp-block-column>.wp-block-cover>.wp-block-cover__inner-container>.wp-block-columns {
+    .wp-block-columns.midiateca-institution-cards>.wp-block-column>.wp-block-cover>.wp-block-cover__inner-container>.wp-block-columns {
         flex-wrap: nowrap;
     }
-    .wp-block-columns.midiateca-museu-cards>.wp-block-column>.wp-block-cover>.wp-block-cover__inner-container>.wp-block-columns>.wp-block-column:first-child {
+    .wp-block-columns.midiateca-institution-cards>.wp-block-column>.wp-block-cover>.wp-block-cover__inner-container>.wp-block-columns>.wp-block-column:first-child {
         flex-basis: 42px !important;
     }
-    .wp-block-columns.midiateca-museu-cards>.wp-block-column>.wp-block-cover>.wp-block-cover__inner-container>.wp-block-columns>.wp-block-column:last-child {
+    .wp-block-columns.midiateca-institution-cards>.wp-block-column>.wp-block-cover>.wp-block-cover__inner-container>.wp-block-columns>.wp-block-column:last-child {
         flex-basis: 100% !important;
     }
     .midiateca-header-elements {

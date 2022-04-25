@@ -26,9 +26,9 @@ add_action('blocksy:hero:before', 'midiateca_add_share_and_back_buttons');
 
 
 /**
- * Adds Museu label bellow item Title
+ * Adds Institution label bellow item Title
  */
-function midiateca_add_museo_info_on_title($single_meta_id, $single_meta, $args) {
+function midiateca_add_institution_info_on_title($single_meta_id, $single_meta, $args) {
     
     if ($single_meta_id === 'categories') {
         
@@ -36,11 +36,11 @@ function midiateca_add_museo_info_on_title($single_meta_id, $single_meta, $args)
         $current_post_type = get_post_type();
             
         if (in_array($current_post_type, $collections_post_types)) {
-            echo '<span class="museo-info-label">Item integrante do: <span/>';
+            echo '<span class="institution-info-label">Item integrante de: <span/>';
         }
     }
 }
-add_action('blocksy:post-meta:render-meta', 'midiateca_add_museo_info_on_title', 0, 3);
+add_action('blocksy:post-meta:render-meta', 'midiateca_add_institution_info_on_title', 0, 3);
 
 /**
  * Retrieves the current items list source link

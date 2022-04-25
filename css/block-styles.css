@@ -78,18 +78,18 @@
     width: 100%;
 }
 
-/* Midiateca museu cards (also home page) */
-.wp-block-columns.midiateca-museu-cards .wp-block-cover__inner-container {
+/* Midiateca institution cards (also home page) */
+.wp-block-columns.midiateca-institution-cards .wp-block-cover__inner-container {
     width: 100% !important;
 }
-.wp-block-columns.midiateca-museu-cards .wp-block-cover__inner-container .wp-block-columns {
+.wp-block-columns.midiateca-institution-cards .wp-block-cover__inner-container .wp-block-columns {
     margin: 0;
     width: 100%;
 }
-.wp-block-columns.midiateca-museu-cards .wp-block-cover__inner-container .wp-block-columns>.wp-block-column:not(:first-child) {
+.wp-block-columns.midiateca-institution-cards .wp-block-cover__inner-container .wp-block-columns>.wp-block-column:not(:first-child) {
     margin-left: 0.75em;
 }
-.wp-block-columns.midiateca-museu-cards .wp-block-cover__inner-container .wp-block-columns>.wp-block-column p {
+.wp-block-columns.midiateca-institution-cards .wp-block-cover__inner-container .wp-block-columns>.wp-block-column p {
     margin-bottom: 0;
 }
 
@@ -128,7 +128,7 @@ div.is-style-outline > .wp-block-button__link {
     background-color: white;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    border: 1px solid var(--paletteColor1, #C4544E);
+    border: 1px solid var(--paletteColor3, #7c7c7c);
     padding: 0 0 0 2.25em;
     min-height: 48px;
     margin-right: -3px;
@@ -190,21 +190,21 @@ div.is-style-outline > .wp-block-button__link {
     color: var(--paletteColor1, #C4544E);
 }
 
-/* Midiateca Museo Pattern */
-.is-midiateca-museo-cover {
+/* Midiateca institution Pattern */
+.is-midiateca-institution-cover {
     margin-bottom: -4rem;
 }
-.is-midiateca-museo-logo {
+.is-midiateca-institution-logo {
     border: 2px solid white;
 }
-.is-midiateca-museo-group h1 {
+.is-midiateca-institution-group h1 {
     margin-top: 0;
     margin-bottom: 0;
 }
-.is-midiateca-museo-group h2 {
+.is-midiateca-institution-group h2 {
     margin-top: 0;
 }
-.is-midiateca-museo-group hr {
+.is-midiateca-institution-group hr {
     height: 1px;
     background-color: #dddddd;
 }
@@ -243,50 +243,6 @@ div.is-style-outline > .wp-block-button__link {
     .wp-block-getwid-images-slider.is-style-midiateca-rounded.alignfull.has-arrows-outside .slick-next {
         right: -38px;
     }
-}
-
-/* New styles for buttons in dark backgrounds */
-/* Fill button to be used on dark backgrounds */
-.wp-block-button.is-style-midiateca-fill-dark:not(.has-text-color),
-.wp-block-button.is-style-midiateca-fill-dark .wp-block-button__link:not(.has-text-color) {
-    color: var(--palette-color-1, #C4544E);
-}
-.wp-block-button.is-style-midiateca-fill-dark:hover:not(.has-text-color),
-.wp-block-button.is-style-midiateca-fill-dark:hover .wp-block-button__link:not(.has-text-color) {
-    color: var(--palette-color-1, #C4544E);
-}
-.wp-block-button.is-style-midiateca-fill-dark:focus:not(.has-text-color),
-.wp-block-button.is-style-midiateca-fill-dark:focus .wp-block-button__link:not(.has-text-color){
-    color: var(--palette-color-2, #c82118);
-}
-
-/* Outline button to be used on dark backgrounds */
-.is-style-midiateca-outline-dark > .wp-block-button__link,
-.wp-block-button__link.is-style-midiateca-outline-dark {
-    border-width: 2px !important;
-    border-style: solid !important;
-}
-.wp-block-button.is-style-midiateca-outline-dark:not(.has-background),
-.wp-block-button.is-style-midiateca-outline-dark .wp-block-button__link:not(.has-background) {
-    background-color: transparent;
-}
-.wp-block-button.is-style-midiateca-outline-dark:not(.has-text-color),
-.wp-block-button.is-style-midiateca-outline-dark .wp-block-button__link:not(.has-text-color) {
-    color: var(--palette-color-6, #f5f5f5);
-    border-color: var(--palette-color-6, #f5f5f5);
-}
-.wp-block-button.is-style-midiateca-outline-dark:hover:not(.has-background),
-.wp-block-button.is-style-midiateca-outline-dark:hover .wp-block-button__link:not(.has-background)  {
-    background-color: transparent;
-}
-.wp-block-button.is-style-midiateca-outline-dark:hover:not(.has-text-color),
-.wp-block-button.is-style-midiateca-outline-dark:hover .wp-block-button__link:not(.has-text-color) {
-    color: var(--palette-color-6, #f5f5f5);
-    border-color: var(--palette-color-6, #f5f5f5);
-}
-.wp-block-button.is-style-midiateca-outline-dark:focus:not(.has-background),
-.wp-block-button.is-style-midiateca-outline-dark:focus .wp-block-button__link:not(.has-background)  {
-    background-color: transparent;
 }
 
 /* Default outlined buttons should be really outline */

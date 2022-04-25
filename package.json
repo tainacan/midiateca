@@ -1,7 +1,7 @@
 {
   "name": "midiateca",
-  "version": "0.1.12",
-  "description": " Midiateca Museus - a child theme of Blocksy",
+  "version": "0.0.9",
+  "description": " Midiateca Capixaba - a child theme of Blocksy",
   "main": "index.js",
   "scripts": {
     "css-minify": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output style.min.css style.css",

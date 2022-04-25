@@ -113,24 +113,6 @@ if ( function_exists('register_block_style') ) {
             )
         );
 
-        register_block_style(
-            'core/button',
-            array(
-                'name'  => 'midiateca-fill-dark',
-                'label' =>  __('Preenchido fundo escuro', 'midiateca'),
-                'isDefault' => false,
-            )
-        );
-
-        register_block_style(
-            'core/button',
-            array(
-                'name'  => 'midiateca-outline-dark',
-                'label' =>  __('Contorno fundo escuro', 'midiateca'),
-                'isDefault' => false,
-            )
-        );
-
     }
     add_action('init', 'midiateca_block_styles');
 }
