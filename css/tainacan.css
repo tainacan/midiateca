@@ -3,6 +3,7 @@
     background-color: var(--paletteColor6, #f5f5f5);
     position: relative;
     margin-bottom: 3rem;
+    --boxShadow: none;
 }
 .tainacan-collection-header__box {
     margin-left: auto;
@@ -60,9 +61,9 @@ body.tax-tnc_tax_34 .tainacan-collection-header.tainacan-collection-header--term
 /* The items list component */
 .tainacan-modal,
 .theme-items-list {
+    --boxShadow: none;
     --borderRadius: 8px;
-    --tainacan-item-heading-background-color: var(--paletteColor8, #ffffff);
-    --tainacan-item-heading-hover-background-color: var(--palette-color-1, #C4544E);
+    --tainacan-primary: rgba(196, 84, 78, 0.3);
 }
 .theme-items-list:not(.is-fullscreen) {
     top: 0rem !important;
@@ -75,6 +76,7 @@ body.tax-tnc_tax_34 .tainacan-collection-header.tainacan-collection-header--term
 }
 .theme-items-list .search-control {
     padding: 20px 0px 6px 3px !important;
+    background-color: transparent !important;
 }
 .tainacan-modal .tags,
 .theme-items-list .tags {
@@ -162,10 +164,8 @@ body.tax-tnc_tax_34 .tainacan-collection-header.tainacan-collection-header--term
     padding: 40px var(--tainacan-one-column, 4.166666667%);
 }
 .theme-items-list .search-control .search-control-item .search-area input {
-    border-color: transparent;
-    background: #f2f2f2;
     padding: 10px 16px;
-    border-radius: 8px !important;
+    border-radius: 4px !important;
     overflow: hide;
     margin-top: -3px;
 }
