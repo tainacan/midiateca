@@ -1,7 +1,7 @@
 #search-modal .ct-panel-actions {
     margin: 0 auto;
     width: var(--container-width);
-    max-width: var(--container-max-width);
+    max-width: var(--normal-container-max-width);
     padding-left: 0;
     padding-right: 7px;
     padding-top: 1rem;
