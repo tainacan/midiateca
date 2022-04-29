@@ -1,8 +1,8 @@
 :root {
     --palette-color-1: var(--paletteColor1, #C4544E);
-    --palette-color-2: var(--paletteColor2, #c82118);
+    --palette-color-2: var(--paletteColor2, #8F2426);
     --palette-color-3: var(--paletteColor3, #7c7c7c);
-    --palette-color-4: var(--paletteColor4, #333333);
+    --palette-color-4: var(--paletteColor4, #5c5c5c);
     --palette-color-5: var(--paletteColor5, #979797);
     --palette-color-6: var(--paletteColor6, #f5f5f5);
     --palette-color-7: var(--paletteColor7, #fffefe);

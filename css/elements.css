@@ -90,7 +90,7 @@
 }
 .midiateca-header-elements .midiateca-header-button::hover,
 .midiateca-header-elements .midiateca-header-button::focus {
-    border: 1px solid var(--palette-color-4, #333333);
+    border: 1px solid var(--palette-color-4, #5c5c5c);
 }
 .midiateca-header-elements .midiateca-header-button .icon {
     position: relative;
@@ -104,10 +104,10 @@
     background-color: var(--paletteColor1, #C4544E);
 }
 .midiateca-header-elements .midiateca-header-button:hover .icon i::before {
-    color: var(--paletteColor2, #c82118);
+    color: var(--paletteColor2, #8F2426);
 }
 .midiateca-header-elements .midiateca-header-button:hover .icon i::after {
-    background-color: var(--paletteColor2, #c82118);
+    background-color: var(--paletteColor2, #8F2426);
 }
 .midiateca-header-elements .midiateca-header-button:focus .icon i::before {
     color: var(--palette-color-1, #C4544E);

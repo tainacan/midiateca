@@ -11,7 +11,7 @@ function midiateca_filter_palette( $args ) {
 		array(
 			'name' => 'Açaí Midiateca Escuro',
 			'slug' => 'palette-color-2',
-			'color' => 'var(--paletteColor2, #c82118)'
+			'color' => 'var(--paletteColor2, #8F2426)'
 		),
 		array(
 			'name' => 'Cor de Texto Midiateca',
@@ -21,7 +21,7 @@ function midiateca_filter_palette( $args ) {
 		array(
 			'name' => 'Cor de Título Midiateca',
 			'slug' => 'palette-color-4',
-			'color' => 'var(--paletteColor4, #333333)'
+			'color' => 'var(--paletteColor4, #5c5c5c)'
 		), 
 		array(
 			'name' => 'Cor de Borda Midiateca',

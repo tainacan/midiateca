@@ -4,7 +4,7 @@
     max-width: var(--normal-container-max-width);
     padding-left: 0;
     padding-right: 7px;
-    padding-top: 1rem;
+    padding-top: 1.75rem;
 }
 #search-modal .search-form {
     margin-bottom: 0;

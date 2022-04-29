@@ -74,7 +74,6 @@ footer .wp-block-tainacan-search-bar+.widget_nav_menu .widget-menu {
     font-family: 'Oxanium', Sans-Serif !important;
     font-weight: bold;
     font-size: 48px;
-    text-transform: uppercase;
     color: var(--paletteColor1, #C4544E);
     margin-bottom: 0;
 }
@@ -91,7 +90,6 @@ footer .wp-block-tainacan-search-bar+.widget_nav_menu .widget-menu {
 .ct-newsletter-subscribe-widget .ct-newsletter-subscribe-description {
     font-weight: 300;
     font-size: 22px;
-    text-transform: uppercase;
     margin-right: auto;
     margin-bottom: 0px !important;
     max-width: 396px;
