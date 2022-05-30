@@ -207,6 +207,11 @@
     padding-left: 64px;
 }
 
+.tainacan-metadata-label {
+    --fontStyle: normal;
+    --fontWeight: 500;
+}
+
 /* Single item navigation link */
 .item-navigation-source-link {
     text-align: center;
