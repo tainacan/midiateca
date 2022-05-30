@@ -1,3 +1,9 @@
+/* Blog page background */
+[data-prefix=blog] {
+	background-color: #f5f5f5;
+	--background-color: #f5f5f5;
+}
+
 /* Hides swiper lazy loading */
 .swiper-lazy-preloader {
     animation: none;
@@ -118,6 +124,9 @@
 .midiateca-header-elements .midiateca-header-button .icon i.dashicons {
     line-height: 1.875rem;
     width: 1.75rem;
+}
+.single-post .midiateca-header-elements {
+    top: 582px;
 }
 
 /* Midiateca Social Icons share list */
