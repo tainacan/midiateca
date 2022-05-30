@@ -3,7 +3,7 @@
 Theme Name: Midiateca
 Description: Midiateca Capixaba - a child theme of Blocksy
 Author: wetah
-Version: 0.0.14
+Version: 0.0.15
 Text Domain: midiateca
 */
 
@@ -12,7 +12,7 @@ if (! defined('WP_DEBUG')) {
 }
 
 /** Child Theme version */
-const MIDIATECA_VERSION = '0.0.14';
+const MIDIATECA_VERSION = '0.0.15';
 
 /* Enqueues necessary JS and CSS files */
 add_action( 'wp_enqueue_scripts', function () {
