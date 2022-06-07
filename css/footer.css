@@ -168,3 +168,16 @@ footer .wp-block-tainacan-search-bar+.widget_nav_menu .widget-menu {
         border-bottom-left-radius: 3px;
     }
 }
+
+.footer-newsletter-form {
+	border: 16px solid #ababab;
+}
+.footer-newsletter-form .tnp-email {
+	border-top-left-radius: 8px !important;
+	border-bottom-left-radius: 8px !important;
+	padding-left: 1.5rem !important;
+}
+.footer-newsletter-form .tnp-submit {
+	border-top-right-radius: 8px !important;
+	border-bottom-right-radius: 8px !important;
+}
