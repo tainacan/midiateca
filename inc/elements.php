@@ -30,7 +30,7 @@ add_action('blocksy:hero:before', 'midiateca_add_share_and_back_buttons');
  */
 function midiateca_add_institution_info_on_title($single_meta_id, $single_meta, $args) {
     
-    if ($single_meta_id === 'categories') {
+    if ( defined('TAINACAN_VERSION') && $single_meta_id === 'categories') {
         
         $collections_post_types = \Tainacan\Repositories\Repository::get_collections_db_identifiers();
         $current_post_type = get_post_type();
