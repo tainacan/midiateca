@@ -672,7 +672,7 @@ function midiateca_curadoria_post_type_init() {
             [
                 'core/media-text',
                 [
-                    'backgroundColor' => 'palette-color-5'
+                    'backgroundColor' => 'palette-color-6'
                 ],
                 [
                     [
