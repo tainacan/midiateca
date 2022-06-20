@@ -100,7 +100,7 @@ function midiateca_instituicao_post_type_init() {
                     [
                         'core/heading',
                         [
-                            'placeholder' => __( 'Cidade - UF' 'midiateca'),
+                            'placeholder' => __( 'Cidade - UF', 'midiateca'),
                             'textAlign' => 'center',
                             'level' => 2,
                             'style' => [
@@ -248,7 +248,8 @@ function midiateca_instituicao_post_type_init() {
                         'tainacan/carousel-items-list',
                         [
                             'align' => 'wide',
-                            'cropImagesToSquare' => true
+                            'cropImagesToSquare' => true,
+                            'arrowsStyle' => 'type-2'
                         ]
                     ],
                     [
@@ -399,6 +400,372 @@ function midiateca_curadoria_post_type_init() {
         'menu_position'      => null,
         'menu_icon'          => 'dashicons-awards',
         'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+        'template'           => [
+            [
+                'core/columns',
+                [],
+                [
+                    [
+                        'core/column',
+                        [],
+                        [
+                            [
+                                'core/heading',
+                                [
+                                    'placeholder' => __('"Subtítulo" da Curadoria...', 'midiateca')
+                                ]
+                            ],
+                            [
+                                'core/paragraph',
+                                [
+                                    'placeholder' => __('Digite aqui uma descrição da Curadoria...', 'midiateca'),
+                                    'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                                ]
+                            ]
+                        ]
+                    ],
+                    [
+                        'core/column',
+                        [],
+                        [
+                            [
+                                'core/embed',
+                                [
+                                    'providerNameSlug' => 'youtube',
+                                    'responsive' => true
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            [
+                'core/heading',
+                [
+                    'placeholder' => __('Número de itens da Curadoria...', 'midiateca'),
+                    'content' => '1234 ITENS'
+                ]
+            ],
+            [
+                'tainacan/dynamic-items-list',
+                [
+                    'align' => 'wide',
+                    'layout' => 'mosaic',
+                    'mosaicGridColumns' => '2',
+                    'mosaicGridRows' => '6',
+                    'showName' => false
+                ]
+            ],
+            [
+                'core/spacer',
+                [
+                    'height' => '42px'
+                ]
+            ],
+            [
+                'core/heading',
+                [
+                    'placeholder' => __('Nome da sessão que apresenta o carrosel de termos...', 'midiateca'),
+                    'content' => 'NESTA CURADORIA'
+                ]
+            ],
+            [
+                'tainacan/carousel-terms-list',
+                [
+                    'align' => 'wide',
+                    'arrowsStyle' => 'type-2',
+                    'showTermThumbnail' => true,
+                    'maxTermsPerScreen' => 6
+                ]
+            ],
+            [
+                'core/spacer',
+                [
+                    'height' => '42px'
+                ]
+            ],
+            [
+                'core/gallery',
+                [
+                    'align' => 'wide'
+                ],
+                [
+                    [
+                        'core/image',
+                        [
+                            'sizeSlug' => 'large'
+                        ]
+                    ],
+                    [
+                        'core/image',
+                        [
+                            'sizeSlug' => 'large'
+                        ]
+                    ],
+                    [
+                        'core/image',
+                        [
+                            'sizeSlug' => 'large'
+                        ]
+                    ]
+                ]
+            ],
+            [
+                'core/group',
+                [
+                    'align' => 'full',
+                    'style' => [
+                        'spacing' => [
+                            'padding' => [
+                                'top' => '64px',
+                                'bottom' => '64px'
+                            ]
+                        ]
+                    ],
+                    'backgroundColor' => 'palette-color-1',
+                    'textColor' => 'palette-color-7'
+                ],
+                [
+                    [
+                        'core/columns',
+                        [
+                            'verticalAlignment' => 'center'
+                        ],
+                        [
+                            [
+                                'core/column',
+                                [
+                                    'verticalAlignment' => 'center',
+                                    'width' => '50%',
+                                    'style' => [
+                                        'spacing' => [
+                                            'padding' => [
+                                                'right' => '64px'
+                                            ]
+                                        ]
+                                    ],
+                                    'textColor' => 'palette-color-7'
+                                ],
+                                [
+                                    [
+                                        'core/heading',
+                                        [
+                                            'textColor' => 'palette-color-7',
+                                            'placeholder' => __('Nome da subseção 1 da curadoria', 'midiateca')
+                                        ]
+                                    ],
+                                    [
+                                        'core/paragraph',
+                                        [
+                                            'placeholder' => __('Conteúdo da subseção 1 da curadoria...', 'midiateca'),
+                                            'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                                        ]
+                                    ],
+                                    [
+                                        'core/paragraph',
+                                        [
+                                            'placeholder' => __('Conteúdo da subseção 1 da curadoria...', 'midiateca'),
+                                            'content' => 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
+                                        ]
+                                    ],
+                                    [
+                                        'core/paragraph',
+                                        [
+                                            'placeholder' => __('Conteúdo da subseção 1 da curadoria...', 'midiateca'),
+                                            'content' => 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?'
+                                        ]
+                                    ]
+                                ]
+                            ],
+                            [
+                                'core/column',
+                                [],
+                                [
+                                    [
+                                        'core/columns',
+                                        [
+                                            'verticalAlignment' => 'center'
+                                        ],
+                                        [
+                                            [
+                                                'core/column',
+                                                [
+                                                    'isStackedOnMobile' => false
+                                                ],
+                                                [
+                                                    [
+                                                        'core/image'
+                                                    ]
+                                                ]
+                                            ],
+                                            [
+                                                'core/column',
+                                                [
+                                                    'isStackedOnMobile' => false
+                                                ],
+                                                [
+                                                    [
+                                                        'core/image'
+                                                    ]
+                                                ]
+                                            ],
+                                            [
+                                                'core/column',
+                                                [
+                                                    'isStackedOnMobile' => false
+                                                ],
+                                                [
+                                                    [
+                                                        'core/image'
+                                                    ]
+                                                ]
+                                            ]
+                                        ]
+                                    ],
+                                    [
+                                        'core/columns',
+                                        [
+                                            'verticalAlignment' => 'center'
+                                        ],
+                                        [
+                                            [
+                                                'core/column',
+                                                [
+                                                    'isStackedOnMobile' => false
+                                                ],
+                                                [
+                                                    [
+                                                        'core/image'
+                                                    ]
+                                                ]
+                                            ],
+                                            [
+                                                'core/column',
+                                                [
+                                                    'isStackedOnMobile' => false
+                                                ],
+                                                [
+                                                    [
+                                                        'core/image'
+                                                    ]
+                                                ]
+                                            ],
+                                            [
+                                                'core/column',
+                                                [
+                                                    'isStackedOnMobile' => false
+                                                ],
+                                                [
+                                                    [
+                                                        'core/image'
+                                                    ]
+                                                ]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            [
+                'core/media-text',
+                [
+                    'backgroundColor' => 'palette-color-5'
+                ],
+                [
+                    [
+                        'core/heading',
+                        [
+                            'placeholder' => __('Um destaque...', 'midiateca')
+                        ]
+                    ],
+                    [
+                        'core/paragraph',
+                        [
+                            'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+                        ]
+                    ],
+                    [
+                        'core/buttons',
+                        [],
+                        [
+                            [
+                                'core/button',
+                                [
+                                    'placeholder' => 'Link para o item'
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            [
+                'core/group',
+                [
+                    'align' => 'wide',
+                    'style' => [
+                        'spacing' => [
+                            'padding' => [
+                                'top' => '64px',
+                                'bottom' => '64px'
+                            ]
+                        ]
+                    ]
+                ],
+                [
+                    [
+                        'core/heading',
+                        [
+                            'placeholder' => __('Nome da subseção 2 da curadoria', 'midiateca')
+                        ]
+                    ],
+                    [
+                        'core/columns',
+                        [],
+                        [
+                            [
+                                'core/column',
+                                [],
+                                [
+                                    [
+                                        'core/paragraph',
+                                        [
+                                            'placeholder' => __('Conteúdo da subseção 2 da curadoria...', 'midiateca'),
+                                            'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                                        ]
+                                    ]
+                                ]
+                            ],
+                            [
+                                'core/column',
+                                [],
+                                [
+                                    [
+                                        'core/paragraph',
+                                        [
+                                            'placeholder' => __('Conteúdo da subseção 2 da curadoria...', 'midiateca'),
+                                            'content' => 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
+                                        ]
+                                    ]
+                                ]
+                            ],
+                            [
+                                'core/column',
+                                [],
+                                [
+                                    [
+                                        'core/image',
+                                        []
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]    
+        ]
     );
     register_post_type( 'curadorias', $args );
 }
