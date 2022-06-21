@@ -250,3 +250,11 @@ div.is-style-outline > .wp-block-button__link {
 .wp-block-button__link.is-style-outline:hover {
     background-color: transparent !important;
 }
+
+/* Blocksy shortcode */
+.ct-posts-shortcode {
+    background-color: transparent !important;
+}
+[data-archive="default"][data-cards="cover"] .entry-card.instituicoes .entry-title {
+    margin-bottom: 0px;
+}
