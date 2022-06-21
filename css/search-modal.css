@@ -23,7 +23,7 @@
     max-width: var(--max-width, 800px);
 }
 #search-modal .midiateca-search-modal-facets-list__header summary {
-    color: var(--palette-color-1, #C4544E);
+    color: var(--palette-color-8, #ffffff);
     font-size: 1.125rem;
     font-weight: normal;
     text-align: center;
@@ -38,7 +38,7 @@
 }
 #search-modal .midiateca-search-modal-facets-list__header summary svg {
     transform: rotateX(0deg);
-    fill: var(--palette-color-1, #C4544E);
+    fill: var(--palette-color-8, #ffffff);
     margin: 1px 8px 1px 6px;
     transition: transform 0.2s ease;
 }
@@ -50,7 +50,7 @@
     left: 0;
     right: 0;
     padding: 3rem 2rem;
-    color: var(--palette-color-1, #C4544E);
+    color: var(--palette-color-8, #ffffff);
     -moz-column-count: 4;
     -moz-column-gap: 1.5em;
     -moz-column-rule: none;
@@ -71,7 +71,7 @@
 #search-modal .midiateca-search-modal-facets-list__content a,
 #search-modal .midiateca-search-modal-facets-list__content a:hover,
 #search-modal .midiateca-search-modal-facets-list__content a:focus {
-    color: var(--palette-color-1, #C4544E);
+    color: var(--palette-color-8, #ffffff);
 }
 #search-modal .midiateca-search-modal-facets-list__content .facet-label {
     font-weight: bold;
