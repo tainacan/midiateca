@@ -770,3 +770,14 @@ function midiateca_curadoria_post_type_init() {
     register_post_type( 'curadorias', $args );
 }
 add_action( 'init', 'midiateca_curadoria_post_type_init' );
+
+/**
+ * Order the instituicoes post type by name per default
+ */
+function instituicoes_default_order($query) {
+    if ( !$query->get('orderby') && $query->get('post_type') && $query->get('post_type') === 'instituicoes' ) {
+        $query->set( 'orderby', 'name' );
+        $query->set( 'order', 'ASC' );
+    }
+}
+add_action( 'pre_get_posts','instituicoes_default_order', 9 );
