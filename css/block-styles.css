@@ -18,9 +18,7 @@
 .wp-block-tainacan-carousel-terms-list.is-style-midiateca-rounded .term-list-item,
 .wp-block-tainacan-carousel-terms-list.is-style-midiateca-rounded .term-list-item img,
 .wp-block-tainacan-carousel-collections-list.is-style-midiateca-rounded .collection-list-item,
-.wp-block-tainacan-carousel-collections-list.is-style-midiateca-rounded .collection-list-item img {
-    border-radius: 8px;
-}
+.wp-block-tainacan-carousel-collections-list.is-style-midiateca-rounded .collection-list-item img,
 .wp-block-getwid-images-slider.is-style-midiateca-rounded .wp-block-getwid-images-slider__item figure {
     border-radius: 8px;
     overflow: hidden;
