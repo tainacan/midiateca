@@ -39,6 +39,14 @@
     color: var(--paletteColor1, #C4544E);
 }
 
+/* Facet block is used for rounded images without title */
+.wp-block-tainacan-facets-list .facets-layout-grid .facet-list-item .facet-label-and-count {
+    align-items: center;
+}
+.wp-block-tainacan-facets-list .facets-layout-grid .facet-list-item .facet-label-and-count span:not(.facet-item-count) {
+    display: none;
+}
+
 /* Rounded Terms carousel has label inside the picture */
 .wp-block-tainacan-carousel-terms-list.is-style-midiateca-rounded .term-list-item a>span,
 .wp-block-tainacan-carousel-collections-list.is-style-midiateca-rounded .collection-list-item a>span {
