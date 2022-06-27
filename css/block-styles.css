@@ -41,7 +41,7 @@
 
 /* Facet block is used for rounded images without title */
 .wp-block-tainacan-facets-list .facets-layout-grid .facet-list-item .facet-label-and-count {
-    align-items: center;
+    align-items: center !important;
 }
 .wp-block-tainacan-facets-list .facets-layout-grid .facet-list-item .facet-label-and-count span:not(.facet-item-count) {
     display: none;
