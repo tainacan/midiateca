@@ -172,6 +172,9 @@ footer .wp-block-tainacan-search-bar+.widget_nav_menu .widget-menu {
 .footer-newsletter-form {
 	border: 16px solid #ababab;
 }
+.footer-newsletter-form h2 {
+    margin-bottom: 0.75rem;
+}
 .footer-newsletter-form .tnp-email {
 	border-top-left-radius: 8px !important;
 	border-bottom-left-radius: 8px !important;

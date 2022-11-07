@@ -228,3 +228,8 @@ body.single-post .hero-section .page-description {
     gap: 30px;
     --wp--style--gallery-gap-default: 30px;
 }
+
+.is-layout-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
