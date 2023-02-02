@@ -233,3 +233,46 @@ body.single-post .hero-section .page-description {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+/* Loading state for taxonomies inside the search modal */
+.loading-modal-taxonomy {
+    margin: 0 auto auto auto;
+    height: 140px;
+}
+.loading-modal-taxonomy .spinner {
+    animation: rotate 2s linear infinite;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    height: 50px;
+}
+
+.loading-modal-taxonomy .spinner .path {
+    stroke: rgb(95, 95, 95);
+    animation: dash 1.5s ease-in-out infinite;
+}
+      
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
